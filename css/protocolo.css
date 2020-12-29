@@ -190,6 +190,17 @@ body{
     -moz-background-size: cover !important;
     -o-background-size: cover!important;
 }
+.imgOla{
+    background-image: url(../img/S1/ola1.png); 
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: bottom right !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+}
 
 @media screen and (max-width: 896px){
 
@@ -203,7 +214,10 @@ body{
     .escuelaResponsive{
         display: none;
     }
-
+    
+    .imgOla{
+        background-image: none;
+    }
 }
 
 @media screen and (max-width: 1024px){
