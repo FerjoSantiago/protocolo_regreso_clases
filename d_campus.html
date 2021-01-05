@@ -16,16 +16,18 @@
     
     <!-- HEADER -->
     <section>
-        <div style="background-color: #0046DC; box-shadow: inset 0px -18px 10px -7px rgba(0,0,0,0.75);">
+        <div style="background-color: #0046DC">
             <div class="py-3">
                 <div class="row" style="justify-content: center; align-items: center;">
-                    <img src="./img/S1/logo.png" alt="Logo">
+                    <a href="./index.html">
+                        <img src="./img/S1/logo.png" alt="Logo">
+                    </a>
                     <p style="color:#074FDE;">´</p>
                     <h4 style="color:white; font-weight: 100; font-style: inherit; font-family: Roboto;">Universidad</h4>
                 </div>
             </div>
        
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(0deg, rgba(68,158,240,1) 8%, rgba(0,70,220,1) 75%); box-shadow: inset 0px -18px 10px -7px rgba(0,0,0,0.75);">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sombraH" style="background: linear-gradient(0deg, rgba(68,158,240,1) 8%, rgba(0,70,220,1) 75%);">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -159,7 +161,7 @@
         <div class="row">
 
             <!-- CUBREBOCA -->
-                <div id="cubreboca" class="col-md-4 py-5 text-center" style="background-color: #3FB7F5; align-items: center;">
+                <div id="cubreboca" class="col mx-2 my-2 py-5 text-center" style="background-color: #3FB7F5; align-items: center;">
                     <div class="container cubrebocaAnimate">
                         <img src="./img/S3/cubreboca.png" alt="cubreboca" height="100%">
                         <br><br>
@@ -169,7 +171,7 @@
                     </div>
                 </div>
                 
-                <div id="cubreboca1" style="align-items: center; display: none; background-image: url(./img/S3/cubreboca1.png);" class="col-md-4 py-5 animate__animated animate__bounceInUp">
+                <div id="cubreboca1" style="align-items: center; display: none; background-image: url(./img/S3/cubreboca1.png);" class="col mx-2 my-2 py-5 animate__animated animate__bounceInUp">
                     <div class="text-right">
                         <button onclick="cerrarCubreboca()" class="btn btn-lg">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" style="color: #012147;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +193,7 @@
             <!--  -->
 
             <!-- SANA DISTANCIA -->
-                <div id="sanadistancia" class="col-md-4 py-5 text-center" style="background-color: #3FACE3; align-items: center;">
+                <div id="sanadistancia" class="col mx-2 my-2 py-5 text-center" style="background-color: #3FACE3; align-items: center;">
                     <div class="container distanciaAnimate">
                         <img src="./img/S3/distancia.png" alt="cubreboca" height="100%">
                         <br><br>
@@ -201,7 +203,7 @@
                     </div>
                 </div>
 
-                <div id="sanadistancia1" style="align-items: center; display: none; background-image: url(./img/S3/distancia1.png);" class="col-md-4 py-5 animate__animated animate__bounceInUp">
+                <div id="sanadistancia1" style="align-items: center; display: none; background-image: url(./img/S3/distancia1.png);" class="col mx-2 my-2 py-5 animate__animated animate__bounceInUp">
                     <div class="text-right">
                         <button onclick="cerrarSanaDistancia()" class="btn btn-lg">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" style="color: #012147;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +225,7 @@
             <!--  -->
 
             <!-- ENCUESTA DE FACTORES DE RIESGO -->
-                <div id="celular" class="col-md-4 py-5 text-center" style="background-color: #2395D0; align-items: center;">
+                <div id="celular" class="col mx-2 my-2 py-5 text-center" style="background-color: #2395D0; align-items: center;">
                     <div class="container celularAnimate">
                         <img src="./img/S3/celular.png" alt="cubreboca" height="100%">
                         <br><br>
@@ -233,7 +235,7 @@
                     </div>
                 </div>
 
-                <div id="celular1" style="align-items: center; display: none; background-image: url(./img/S3/distancia1.png);" class="col-md-4 py-5 animate__animated animate__bounceInUp">
+                <div id="celular1" style="align-items: center; display: none; background-image: url(./img/S3/celular2.png);" class="col mx-2 my-2 py-5 animate__animated animate__bounceInUp">
                     <div class="text-right">
                         <button onclick="cerrarEncuesta()" class="btn btn-lg">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" style="color: #012147;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -246,21 +248,18 @@
                     <div class="container py-5 text-center">
                         <br><br>
                         <h2 style="color: #012147; font-family: Roboto; font-style: normal; font-weight: 500; line-height: 26px;">
-                            Ingresarás al campus a través del
-                            <strong style="font-style: italic;">filtro sanitario,</strong>
-                            guardando la  <strong style="font-style: italic;">sana distancia de 1.5 mts.</strong>
+                            Debes presentar a tu llegada el resultado de la
+                            <strong style="font-style: italic;">Encuesta de factores de Riesgo en tu teléfono.</strong>
                         </h2>
                     </div>
                 </div>
             <!--  -->
         </div>
-
-        <br>
-
+        
         <div class="row">
 
             <!-- TEMPERATURA -->
-                <div id="temperatura" class="col-md-4 py-5 text-center" style="background-color: #1F87BD; align-items: center;">
+                <div id="temperatura" class="col mx-2 my-2 py-5 text-center" style="background-color: #1F87BD; align-items: center;">
                     <div class="container temperaturaAnimate">
                         <img src="./img/S3/temperatura.png" alt="cubreboca" height="100%">
                         <br><br>
@@ -270,7 +269,7 @@
                     </div>
                 </div>
 
-                <div id="temperatura1" style="align-items: center; display: none; background-image: url(./img/S3/distancia1.png);" class="col-md-4 py-5 animate__animated animate__bounceInUp">
+                <div id="temperatura1" style="align-items: center; display: none; background-image: url(./img/S3/temperatura2.png);" class="col mx-2 my-2 py-5 animate__animated animate__bounceInUp">
                     <div class="text-right">
                         <button onclick="cerrarTemp()" class="btn btn-lg">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" style="color: #012147;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -283,16 +282,18 @@
                     <div class="container py-5 text-center">
                         <br><br>
                         <h2 style="color: #012147; font-family: Roboto; font-style: normal; font-weight: 500; line-height: 26px;">
-                            Ingresarás al campus a través del
-                            <strong style="font-style: italic;">filtro sanitario,</strong>
-                            guardando la  <strong style="font-style: italic;">sana distancia de 1.5 mts.</strong>
+                            <strong style="font-style: italic;">Debes permitir</strong>
+                            que te sea tomada <strong style="font-style: italic;">la temperatura corporal </strong>
+                            y estar consciente de que en caso de que sea 
+                            <strong style="font-style: italic;">mayor o igual a 37.5°, </strong>
+                            deberás ser canalizado a las instancias de salud correspondientes.
                         </h2>
                     </div>
                 </div>
             <!--  -->
 
             <!-- LAVAR MANOS -->
-                <div id="lavarmanos" class="col-md-4 py-5 text-center" style="background-color: #41A4D7; align-items: center;">
+                <div id="lavarmanos" class="col mx-2 my-2 py-5 text-center" style="background-color: #41A4D7; align-items: center;">
                     <div class="container lavarmanosAnimate">
                         <img src="./img/S3/lavarmanos.png" alt="cubreboca" height="100%">
                         <br><br>
@@ -302,7 +303,7 @@
                     </div>
                 </div>
 
-                <div id="lavarmanos1" style="align-items: center; display: none; background-image: url(./img/S3/distancia1.png);" class="col-md-4 py-5 animate__animated animate__bounceInUp">
+                <div id="lavarmanos1" style="align-items: center; display: none; background-image: url(./img/S3/lavar2.png);" class="col mx-2 my-2 py-5 animate__animated animate__bounceInUp">
                     <div class="text-right">
                         <button onclick="cerrarlm()" class="btn btn-lg">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" style="color: #012147;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -315,16 +316,16 @@
                     <div class="container py-5 text-center">
                         <br><br>
                         <h2 style="color: #012147; font-family: Roboto; font-style: normal; font-weight: 500; line-height: 26px;">
-                            Ingresarás al campus a través del
-                            <strong style="font-style: italic;">filtro sanitario,</strong>
-                            guardando la  <strong style="font-style: italic;">sana distancia de 1.5 mts.</strong>
+                            Deberás <strong style="font-style: italic;"> lavarte las manos, limpiar el calzado </strong> 
+                            en los tapetes sanitizantes y
+                            <strong style="font-style: italic;">aplicarte gel antibacterial en los lugares establecidos </strong> para tal efecto.
                         </h2>
                     </div>
                 </div>
             <!--  -->
 
             <!-- AULA/SILLA -->
-                <div id="aula" class="col-md-4 py-5 text-center" style="background-color: #5BB8E8; align-items: center;">
+                <div id="aula" class="col mx-2 my-2 py-5 text-center" style="background-color: #5BB8E8; align-items: center;">
                     <div class="container aulaAnimate">
                         <img src="./img/S3/silla.png" alt="cubreboca" height="100%">
                         <br><br>
@@ -334,7 +335,7 @@
                     </div>
                 </div>
 
-                <div id="aula1" style="align-items: center; display: none; background-image: url(./img/S3/distancia1.png);" class="col-md-4 py-5 animate__animated animate__bounceInUp">
+                <div id="aula1" style="align-items: center; display: none; background-image: url(./img/S3/silla2.png);" class="col mx-2 my-2 py-5 animate__animated animate__bounceInUp">
                     <div class="text-right">
                         <button onclick="cerrarAula()" class="btn btn-lg">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" style="color: #012147;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -347,9 +348,10 @@
                     <div class="container py-5 text-center">
                         <br><br>
                         <h2 style="color: #012147; font-family: Roboto; font-style: normal; font-weight: 500; line-height: 26px;">
-                            Ingresarás al campus a través del
-                            <strong style="font-style: italic;">filtro sanitario,</strong>
-                            guardando la  <strong style="font-style: italic;">sana distancia de 1.5 mts.</strong>
+                            Una vez concluido el protocolo de ingreso, 
+                            <strong style="font-style: italic;"> debes trasladarte 
+                            directamente a tu salón de clases </strong> (a menos que requieras realizar 
+                            algún tramite en control escolar o caja).
                         </h2>
                     </div>
                 </div>
@@ -364,6 +366,7 @@
         <div style="background-color: #012147;">
             <div class="container py-5" >
                 <div class="row" style="align-items: center; justify-content: center;">
+
                     <div class="col-md-4">
                         <div class="row">
                             <div class="col-md-4">
@@ -382,14 +385,15 @@
                         </div>
                     </div>
 
-                    <div class="col-md-5"></div>
+                    <div class="col-md-4"></div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <p style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 100%; letter-spacing: 0.01em; color: #FFFFFF;"> 
                             Contáctanos <br> 
                             <img src="./img/footer/Lhorizontal.png" alt="">
                         </p>
                         <div class="row text-right">
+                            <p style="color: #012147;">```</p>
                             <img src="./img/footer/tel.png" alt="tel" height="100%">
                             <p style="font-family: Roboto; font-style: normal; font-weight: 500; font-size: 90%; letter-spacing: 0.01em; color: #FFFFFF;"> 
                                 Tel. (228) 811.11.55
@@ -404,6 +408,7 @@
                         </p>
                         
                         <div class="row" style="justify-content: space-between;">
+                            <div class="container">
                             <a href="https://www.facebook.com/iuv.universidad" target="_blank">
                                 <img src="./img/footer/f.png" alt="Facebook IUV" max-width="100%" height="auto" >
                             </a>
@@ -423,8 +428,10 @@
                             <a href="https://www.linkedin.com/school/iuv-universidad/" target="_blank">
                                 <img src="./img/footer/in.png" alt="Linkedin IUV" max-width="100%" height="auto" >
                             </a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

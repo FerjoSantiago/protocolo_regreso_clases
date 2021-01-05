@@ -16,16 +16,18 @@
     
     <!-- HEADER -->
     <section>
-        <div style="background-color: #0046DC; box-shadow: inset 0px -18px 10px -7px rgba(0,0,0,0.75);">
+        <div style="background-color: #0046DC; ">
             <div class="py-3">
                 <div class="row" style="justify-content: center; align-items: center;">
-                    <img src="./img/S1/logo.png" alt="Logo">
+                    <a href="./index.html">
+                        <img src="./img/S1/logo.png" alt="Logo">
+                    </a>
                     <p style="color:#074FDE;">´</p>
                     <h4 style="color:white; font-weight: 100; font-style: inherit; font-family: Roboto;">Universidad</h4>
                 </div>
             </div>
        
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(0deg, rgba(68,158,240,1) 8%, rgba(0,70,220,1) 75%); box-shadow: inset 0px -18px 10px -7px rgba(0,0,0,0.75);">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sombraH" style="background: linear-gradient(0deg, rgba(68,158,240,1) 8%, rgba(0,70,220,1) 75%); ">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -152,10 +154,11 @@
 
     <!-- SECCIÓN 1 -->
     <section>
+
         <div class="row">
 
             <!-- CAFETERIA -->
-            <div id="divcafeteria" class="cafeteria cafeteriaAnimate col-md-4 py-5 text-center" style="background-image: url(./img/S7/cafeteria.png);">
+            <div id="divcafeteria" class="cafeteria col-md-4 py-5 text-center" style="background-image: url(./img/S7/cafeteria.png);">
                 <div class="py-3">  
                     <h1 style="font-family: Roboto; color: white; font-weight: bold; font-style: normal; ">
                         Cafetería
@@ -170,29 +173,22 @@
                 </div>
             </div>
 
-            <div id="divcafeteria1" style="align-items: center; display: none; background-image: url(./img/S3/cubreboca1.png);" class="col-md-4 py-5 animate__animated animate__bounceInUp">
-                <div class="text-right">
-                    <button onclick="cerrarCafeteria()" class="btn btn-lg">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" style="color: #012147;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>     
-                </div>
-
-                <div class="container py-5 text-center">
-                    <br><br>
-                    <h2 style="color: #012147; font-family: Roboto; font-style: normal; font-weight: 500; line-height: 26px;">
-                        <strong style="font-style: italic;">El uso correcto del cubrebocas,
-                        (cubriendo nariz y boca) </strong> 
-                        es obligatorio durante toda la estancia en el campus.
-                    </h2>
+            <div id="divcafeteriaResponsive" class="container py-5" style="display: none; background-color: #893636; color: #FFFFFF; font-family: Roboto; line-height: 28px; text-align: center;">
+                <div class="container py-5">
+                    <h4>
+                        <strong style="font-style: italic;">Los servicios de la cafetería </strong>
+                        estarán disponibles con todas las medidas de prevención 
+                        necesarias <strong style="font-style: italic;">con base en las normas emitidas por la Secretaría de Salud. </strong> 
+                        La modalidad de servicio será de <strong style="font-style: italic;">alimentos para llevar. </strong>
+                        Deberás consumir tus alimentos de forma independiente, 
+                        en los espacios abiertos y mantenido la sana distancia.
+                    </h4>
                 </div>
             </div>
             <!--  -->
 
             <!-- BIBLIOTECA -->
-            <div id="divbiblioteca" class="biblioteca bibliotecaAnimate col-md-4 py-5 text-center" style="background-image: url(./img/S7/biblioteca.png); justify-content: center; align-items: center;">
+            <div id="divbiblioteca" class="biblioteca col-md-4 py-5 text-center" style="background-image: url(./img/S7/biblioteca.png); justify-content: center; align-items: center;">
                 <div class="py-3">
                     <h1 style="font-family: Roboto; color: white; font-weight: bold; font-style: normal;">
                         Biblioteca
@@ -207,29 +203,21 @@
                 </div>
             </div>
 
-            <div id="divbiblioteca1" style="align-items: center; display: none; background-image: url(./img/S3/cubreboca1.png);" class="col-md-4 py-5 animate__animated animate__bounceInUp">
-                <div class="text-right">
-                    <button onclick="cerrarBiblioteca()" class="btn btn-lg">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" style="color: #012147;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>     
-                </div>
-
-                <div class="container py-5 text-center">
-                    <br><br>
-                    <h2 style="color: #012147; font-family: Roboto; font-style: normal; font-weight: 500; line-height: 26px;">
-                        <strong style="font-style: italic;">El uso correcto del cubrebocas,
-                        (cubriendo nariz y boca) </strong> 
-                        es obligatorio durante toda la estancia en el campus.
-                    </h2>
+            <div id="divbibliotecaResponsive" class="container py-5" style="display: none; background-color: #9B8515; color: #FFFFFF; font-family: Roboto; line-height: 28px; text-align: center;">
+                <div class="container py-5">
+                    <h4>
+                        <strong style="font-style: italic;">El servicio de biblioteca física</strong> permanecerá cerrado hasta que las 
+                        condiciones permitan su reapertura. Tienes a tu disposición <strong style="font-style: italic;">la biblioteca
+                        digital</strong> con que cuenta la universidad. Si no tienes usuario y contraseña o 
+                        éste ha caducado, comunícate a la Coordinación de Proceso Educativo por whatsapp 
+                        <strong style="font-style: italic;">al número xxxx,</strong> para que te sea proporcionado.
+                    </h4>
                 </div>
             </div>
             <!--  -->
 
             <!-- INSTALACIONES DEPORTIVAS -->
-            <div id="divinstalaciones" class="instalaciones instalacionesAnimate col-md-4 py-5 text-center" style="background-image: url(./img/S7/instalaciones_deportivas.png); justify-content: center; align-items: center;">
+            <div id="divinstalaciones" class="instalaciones col-md-4 py-5 text-center" style="background-image: url(./img/S7/instalaciones.png); justify-content: center; align-items: center;">
                 <div class="py-3">
                     <h1 style="font-family: Roboto; color: white; font-weight: bold; font-style: normal;">
                         Instalaciones deportivas
@@ -244,28 +232,54 @@
                 </div>
             </div>
 
-            <div id="divinstalaciones1" style="align-items: center; display: none; background-image: url(./img/S3/cubreboca1.png);" class="col-md-4 py-5 animate__animated animate__bounceInUp">
-                <div class="text-right">
-                    <button onclick="cerrarInstalaciones()" class="btn btn-lg">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" style="color: #012147;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>     
-                </div>
-
-                <div class="container py-5 text-center">
-                    <br><br>
-                    <h2 style="color: #012147; font-family: Roboto; font-style: normal; font-weight: 500; line-height: 26px;">
-                        <strong style="font-style: italic;">El uso correcto del cubrebocas,
-                        (cubriendo nariz y boca) </strong> 
-                        es obligatorio durante toda la estancia en el campus.
-                    </h2>
+            <div id="divinstalacionesResponsive" class="container py-5" style="display: none; background-color: #387B77;; color: #FFFFFF; font-family: Roboto; line-height: 28px; text-align: center;">
+                <div class="container py-5">
+                    <h4>
+                        <strong style="font-style: italic;">Los servicios de la cafetería </strong>
+                        <strong style="font-style: italic;">Las instalaciones deportivas permanecerán cerradas</strong> 
+                        para el uso recreativo hasta que las condiciones permitan su reapertura.
+                    </h4>
                 </div>
             </div>
             <!--  -->
 
         </div>
+
+        <div id="divcafeteria1" class="py-5" style="display: none; background-color: #893636; color: #FFFFFF; font-family: Roboto; line-height: 28px; text-align: center;">
+            <div class="container py-5">
+                <h4>
+                    <strong style="font-style: italic;">Los servicios de la cafetería </strong>
+                    estarán disponibles con todas las medidas de prevención 
+                    necesarias <strong style="font-style: italic;">con base en las normas emitidas por la Secretaría de Salud. </strong> 
+                    La modalidad de servicio será de <strong style="font-style: italic;">alimentos para llevar. </strong>
+                    Deberás consumir tus alimentos de forma independiente, 
+                    en los espacios abiertos y mantenido la sana distancia.
+                </h4>
+            </div>
+        </div>
+
+        <div id="divbiblioteca1" class="py-5" style="display: none; background-color: #9B8515; color: #FFFFFF; font-family: Roboto; line-height: 28px; text-align: center;">
+            <div class="container py-5">
+                <h4>
+                    <strong style="font-style: italic;">El servicio de biblioteca física</strong> permanecerá cerrado hasta que las 
+                    condiciones permitan su reapertura. Tienes a tu disposición <strong style="font-style: italic;">la biblioteca
+                    digital</strong> con que cuenta la universidad. Si no tienes usuario y contraseña o 
+                    éste ha caducado, comunícate a la Coordinación de Proceso Educativo por whatsapp 
+                    <strong style="font-style: italic;">al número xxxx,</strong> para que te sea proporcionado.
+                </h4>
+            </div>
+        </div>
+
+        <div id="divinstalaciones1" class="py-5" style="display: none; background-color: #387B77;; color: #FFFFFF; font-family: Roboto; line-height: 28px; text-align: center;">
+            <div class="container py-5">
+                <h4>
+                    <strong style="font-style: italic;">Los servicios de la cafetería </strong>
+                    <strong style="font-style: italic;">Las instalaciones deportivas permanecerán cerradas</strong> 
+                    para el uso recreativo hasta que las condiciones permitan su reapertura.
+                </h4>
+            </div>
+        </div>
+
     </section>
 
     <!-- Footer -->
@@ -292,14 +306,15 @@
                         </div>
                     </div>
 
-                    <div class="col-md-5"></div>
+                    <div class="col-md-4"></div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <p style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 100%; letter-spacing: 0.01em; color: #FFFFFF;"> 
                             Contáctanos <br> 
                             <img src="./img/footer/Lhorizontal.png" alt="">
                         </p>
                         <div class="row text-right">
+                            <p style="color: #012147;">```</p>
                             <img src="./img/footer/tel.png" alt="tel" height="100%">
                             <p style="font-family: Roboto; font-style: normal; font-weight: 500; font-size: 90%; letter-spacing: 0.01em; color: #FFFFFF;"> 
                                 Tel. (228) 811.11.55
@@ -314,6 +329,7 @@
                         </p>
                         
                         <div class="row" style="justify-content: space-between;">
+                            <div class="container">
                             <a href="https://www.facebook.com/iuv.universidad" target="_blank">
                                 <img src="./img/footer/f.png" alt="Facebook IUV" max-width="100%" height="auto" >
                             </a>
@@ -333,6 +349,7 @@
                             <a href="https://www.linkedin.com/school/iuv-universidad/" target="_blank">
                                 <img src="./img/footer/in.png" alt="Linkedin IUV" max-width="100%" height="auto" >
                             </a>
+                            </div>
                         </div>
                     </div>
 
@@ -344,14 +361,32 @@
     <!-- SCRIPTS -->
     <script>
         function abrirCafeteria(){
-            divCafeteria = document.getElementById('divcafeteria');
-            divCafeteria.style.display = 'none';
+            
+            var x = window.matchMedia("(max-width: 770px)")
 
-            divCafeteria1 = document.getElementById('divcafeteria1');
-            divCafeteria1.style.display = 'block';
+                if (x.matches) { // If media query matches
+                    divCafeteria1 = document.getElementById('divcafeteriaResponsive');
+                    divCafeteria1.style.display = 'block';
+
+                    divbiblioteca1 = document.getElementById('divbibliotecaResponsive');
+                    divbiblioteca1.style.display = 'none';
+
+                    divinstalaciones1 = document.getElementById('divinstalacionesResponsive');
+                    divinstalaciones1.style.display = 'none';
+
+                } else {
+                    divCafeteria1 = document.getElementById('divcafeteria1');
+                    divCafeteria1.style.display = 'block';
+
+                    divbiblioteca1 = document.getElementById('divbiblioteca1');
+                    divbiblioteca1.style.display = 'none';
+
+                    divinstalaciones1 = document.getElementById('divinstalaciones1');
+                    divinstalaciones1.style.display = 'none';
+                }
         }
 
-        function cerrarCafeteria(){
+        /*function cerrarCafeteria(){
             divmh1 = document.getElementById('divcafeteria1');
             divmh1.style.display = 'none';
 
@@ -360,44 +395,58 @@
 
             divmh2 = document.getElementById('divcafeteria');
             divmh2.style.display = 'block';
-        }
+        }*/
 
         function abrirBiblioteca(){
-            divBiblioteca = document.getElementById('divbiblioteca');
-            divBiblioteca.style.display = 'none';
+        
+            var x = window.matchMedia("(max-width: 770px)")
 
-            divBiblioteca1 = document.getElementById('divbiblioteca1');
-            divBiblioteca1.style.display = 'block';
-        }
+                if (x.matches) { // If media query matches
+                    divCafeteria1 = document.getElementById('divcafeteriaResponsive');
+                    divCafeteria1.style.display = 'none';
 
-        function cerrarBiblioteca(){
-            divmh1 = document.getElementById('divbiblioteca1');
-            divmh1.style.display = 'none';
+                    divbiblioteca1 = document.getElementById('divbibliotecaResponsive');
+                    divbiblioteca1.style.display = 'block';
 
-            const element = document.querySelector('div.bibliotecaAnimate');
-            element.classList.add('animate__animated', 'animate__bounceInUp');
+                    divinstalaciones1 = document.getElementById('divinstalacionesResponsive');
+                    divinstalaciones1.style.display = 'none';
 
-            divmh2 = document.getElementById('divbiblioteca');
-            divmh2.style.display = 'block';
+                } else {
+                    divCafeteria1 = document.getElementById('divcafeteria1');
+                    divCafeteria1.style.display = 'none';
+
+                    divbiblioteca1 = document.getElementById('divbiblioteca1');
+                    divbiblioteca1.style.display = 'block';
+
+                    divinstalaciones1 = document.getElementById('divinstalaciones1');
+                    divinstalaciones1.style.display = 'none';
+                }
         }
 
         function abrirInstalaciones(){
-            divInstalaciones = document.getElementById('divinstalaciones');
-            divInstalaciones.style.display = 'none';
+           
+            var x = window.matchMedia("(max-width: 770px)")
 
-            divInstalaciones1 = document.getElementById('divinstalaciones1');
-            divInstalaciones1.style.display = 'block';
-        }
+                if (x.matches) { // If media query matches
+                    divCafeteria1 = document.getElementById('divcafeteriaResponsive');
+                    divCafeteria1.style.display = 'none';
 
-        function cerrarInstalaciones(){
-            divmh1 = document.getElementById('divinstalaciones1');
-            divmh1.style.display = 'none';
+                    divbiblioteca1 = document.getElementById('divbibliotecaResponsive');
+                    divbiblioteca1.style.display = 'none';
 
-            const element = document.querySelector('div.instalacionesAnimate');
-            element.classList.add('animate__animated', 'animate__bounceInUp');
+                    divinstalaciones1 = document.getElementById('divinstalacionesResponsive');
+                    divinstalaciones1.style.display = 'block';
 
-            divmh2 = document.getElementById('divinstalaciones');
-            divmh2.style.display = 'block';
+                } else {
+                    divCafeteria1 = document.getElementById('divcafeteria1');
+                    divCafeteria1.style.display = 'none';
+
+                    divbiblioteca1 = document.getElementById('divbiblioteca1');
+                    divbiblioteca1.style.display = 'none';
+
+                    divinstalaciones1 = document.getElementById('divinstalaciones1');
+                    divinstalaciones1.style.display = 'block';
+                }
         }
 
     </script>

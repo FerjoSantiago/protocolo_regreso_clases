@@ -201,6 +201,11 @@ body{
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
 }
+.sombraH{
+    box-shadow: 1px 10px 9px 0px rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 1;
+}
 
 @media screen and (max-width: 896px){
 
